@@ -3,14 +3,49 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable;
+    /** @use HasFactory<UserFactory> */
+    use HasApiTokens, HasFactory, Notifiable;
+
+    public function robots(): HasMany
+    {
+        return $this->hasMany(Robot::class);
+    }
+
+    public function executions(): HasManyThrough
+    {
+        return $this->hasManyThrough(Execution::class, Robot::class);
+    }
+
+    public function deals(): HasMany
+    {
+        return $this->hasMany(Deal::class);
+    }
+
+    public function bookmarks(): BelongsToMany
+    {
+        return $this->belongsToMany(Deal::class, 'deal_bookmarks')->withTimestamps();
+    }
+
+    public function dealComments(): HasMany
+    {
+        return $this->hasMany(DealComment::class);
+    }
+
+    public function dealVotes(): HasMany
+    {
+        return $this->hasMany(DealVote::class);
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -21,6 +56,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'avatar_url',
+        'preferences',
     ];
 
     /**
@@ -43,6 +80,7 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'preferences' => 'array',
         ];
     }
 }
