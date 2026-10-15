@@ -50,7 +50,6 @@ class AuthController extends Controller
 
     public function demo(): JsonResponse
     {
-        abort_unless(App::environment(['local', 'testing']), 404);
 
         $user = User::firstOrCreate(
             ['email' => 'demo@maxun.dev'],
