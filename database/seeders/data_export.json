@@ -1,0 +1,294 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Alex Morgan",
+            "email": "demo@maxun.dev",
+            "email_verified_at": null,
+            "password": "$2y$12$sY\/O5XW4YtqVOxoR3ZKXS.wh86TlBh2ld6xo5OzhDeMXua.dxntIq",
+            "remember_token": null,
+            "created_at": "2026-10-13T04:07:37.000000Z",
+            "updated_at": "2026-10-13T04:07:37.000000Z",
+            "avatar_url": null,
+            "preferences": null
+        },
+        {
+            "id": 3,
+            "name": "castillobarbudoalexander",
+            "email": "castillobarbudoalexander@gmail.com",
+            "email_verified_at": null,
+            "password": "$2y$12$2VVWEIByxhRLSSdLTyLLHuDR7jwl98y69yo0mbxHYL65qfBXiwShS",
+            "remember_token": null,
+            "created_at": "2026-10-13T04:31:44.000000Z",
+            "updated_at": "2026-10-13T04:31:44.000000Z",
+            "avatar_url": null,
+            "preferences": null
+        }
+    ],
+    "robots": [
+        {
+            "id": 5,
+            "user_id": 3,
+            "name": "Laptop gamer",
+            "website_url": "https:\/\/www.amazon.com.mx\/Acer-Nitro-Laptop-Gaming-Intel\/dp\/B0H9G8PFRW\/ref=sr_1_1_sspa?crid=1XVQ2VEFZUCA8&dib=eyJ2IjoiMSJ9.9E4Qfq9R-bJgbIE3133mgZfQlG604Q6NBHzZawsy7APgAu5J5fqhDR6YBfwiEuFfbzMC3GfmiOQflEGeEN3XyYmBbZpbPSu2DyE4bmIPZIkwkMebmfP1-QJcqshGMm8mj77R18Bcnb8f-FI8X_Yo8AqCPeiqf1iSrcpAPOkTagIejY5pbBbUqKZbVrr9WXJFjYkEruM6xGYo9c8jJLe8AYS3appe44uTcjKOP3RQGK9w3kUCryART1y32Y39746c4vHM-VDKh3WeqkN7eF-3dZ-WzPEE1CtNUb1obAxNYMI.yal1-xupOMY80xtLKLl_IsPxry-MqNEYWiURs5l446g&dib_tag=se&keywords=laptop%2Bgamer&qid=1791865655&sprefix=laptop%2Caps%2C183&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.03979ec5-04c0-4e2b-b2cb-0da67477c2a5&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1",
+            "mode": "Scrape",
+            "output_formats": [
+                "Markdown"
+            ],
+            "smart_queries": "Dame las marcas, los precios y las promociones que hay",
+            "monitoring": true,
+            "monitoring_interval": 60,
+            "created_at": "2026-10-13T04:32:28.000000Z",
+            "updated_at": "2026-10-13T04:32:28.000000Z"
+        },
+        {
+            "id": 6,
+            "user_id": 3,
+            "name": "Telefono",
+            "website_url": "https:\/\/www.liverpool.com.mx\/tienda\/pdp\/iphone-17-pro-max-6-9-pulgadas-super-retina-xdr\/1186189824?jml_model=global-tps-sales",
+            "mode": "Scrape",
+            "output_formats": [
+                "Markdown"
+            ],
+            "smart_queries": null,
+            "monitoring": true,
+            "monitoring_interval": 60,
+            "created_at": "2026-10-14T00:07:31.000000Z",
+            "updated_at": "2026-10-14T00:07:31.000000Z"
+        }
+    ],
+    "deals": [
+        {
+            "id": 1,
+            "user_id": 3,
+            "title": "Laptop Games Amd Ryzen 7 7730u 16gb Ram 512gb Ssd 15.6'' Fhd",
+            "description": "Laptop gamer",
+            "product_url": "https:\/\/www.mercadolibre.com.mx\/laptop-games-amd-ryzen-7-7730u-16gb-ram-512gb-ssd-156-fhd\/p\/MLM53294459?pdp_filters=item_id:MLM3883508200#is_advertising=true&searchVariation=MLM53294459&backend_model=search-backend&be_origin=backend&position=2&search_layout=grid&type=pad&tracking_id=6b007d20-dfce-4c74-bfe6-77f418646390&ad_domain=VQCATCORE_LST&ad_position=2&ad_click_id=ODMzZmQxYjAtZDdjNi00NTE0LWEyMGMtMjg4MzljYTE5NmIw",
+            "image_url": "https:\/\/http2.mlstatic.com\/D_NQ_NP_2X_818117-MLA110457913463_042026-F.webp",
+            "store": "Mercado Libre",
+            "current_price": "10500.00",
+            "regular_price": "1145742.00",
+            "currency": "MXN",
+            "discount_percent": 99,
+            "status": "active",
+            "votes_count": 0,
+            "bookmarks_count": 0,
+            "comments_count": 0,
+            "created_at": "2026-10-13T04:55:44.000000Z",
+            "updated_at": "2026-10-13T04:55:44.000000Z",
+            "product_details": null,
+            "gallery_images": null
+        },
+        {
+            "id": 2,
+            "user_id": 3,
+            "title": "iPhone 17 Pro Max 6.9 pulgadas Super Retina XDR | Liverpool",
+            "description": "Compra iPhone 17 Pro Max 6.9 pulgadas Super Retina XDR en Liverpool y aprovecha el envío gratis en todas tus compras.",
+            "product_url": "https:\/\/www.liverpool.com.mx\/tienda\/pdp\/iphone-17-pro-max-6-9-pulgadas-super-retina-xdr\/1186189824?jml_model=global-tps-sales",
+            "image_url": "https:\/\/sp632.liverpool.com.mx\/i\/1186094685.jpg",
+            "store": "Liverpool",
+            "current_price": "30998.50",
+            "regular_price": "32630.00",
+            "currency": "MXN",
+            "discount_percent": 5,
+            "status": "active",
+            "votes_count": 0,
+            "bookmarks_count": 1,
+            "comments_count": 0,
+            "created_at": "2026-10-14T00:19:49.000000Z",
+            "updated_at": "2026-10-14T00:20:30.000000Z",
+            "product_details": [],
+            "gallery_images": null
+        },
+        {
+            "id": 3,
+            "user_id": 3,
+            "title": "Galaxy S26 Dynamic AMOLED 2X 6.2 pulgadas | Liverpool",
+            "description": "Compra Galaxy S26 Dynamic AMOLED 2X 6.2 pulgadas en Liverpool y aprovecha el envío gratis en todas tus compras.",
+            "product_url": "https:\/\/www.liverpool.com.mx\/tienda\/pdp\/galaxy-s26-dynamic-amoled-2x-6-2-pulgadas\/1191395768?jml_model=global-top-selling-long-model",
+            "image_url": "https:\/\/sp632.liverpool.com.mx\/i\/1191395782.jpg",
+            "store": "Liverpool",
+            "current_price": "15998.90",
+            "regular_price": "16799.00",
+            "currency": "MXN",
+            "discount_percent": 5,
+            "status": "sold_out",
+            "votes_count": 0,
+            "bookmarks_count": 0,
+            "comments_count": 0,
+            "created_at": "2026-10-14T04:12:42.000000Z",
+            "updated_at": "2026-10-14T04:12:46.000000Z",
+            "product_details": [],
+            "gallery_images": [
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_1p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_2p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_3p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_4p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_5p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_6p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_7p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_8p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1191395782_20p.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "user_id": 3,
+            "title": "Fortnite Minty Legends Pack + 1000 V-Bucks Código de XBOX LIVE GLOBAL",
+            "description": "Lleva tu experiencia de juego en Fortnite a un nuevo nivel con el Pack Fortnite Minty Legends + 100 V-Bucks que incluye:\r\n\r\n● Fresh Aura Outfit\r\n● Min",
+            "product_url": "https:\/\/www.eneba.com\/latam\/xbox-fortnite-minty-legends-pack-1000-v-bucks-xbox-live-key-global",
+            "image_url": "https:\/\/imgproxy.eneba.games\/fPuQqf5i4U9cgxPb_8fLG_W6fZguMmrRxrrCe80DRks\/rs:fit:300\/ar:1\/czM6Ly9wcm9kdWN0\/cy5lbmViYS5nYW1l\/cy9wcm9kdWN0cy8x\/NkxydVNTTUJseTQ4\/cG9KN2hIQkdzSkli\/bXNzNWljZDBzbGVr\/bHROV2FBLmpwZWc",
+            "store": "Eneba",
+            "current_price": "6.40",
+            "regular_price": null,
+            "currency": "USD",
+            "discount_percent": null,
+            "status": "active",
+            "votes_count": 0,
+            "bookmarks_count": 0,
+            "comments_count": 0,
+            "created_at": "2026-10-14T04:17:25.000000Z",
+            "updated_at": "2026-10-14T04:17:25.000000Z",
+            "product_details": {
+                "rating": "3.93",
+                "reviewCount": "628",
+                "availability": "InStock"
+            },
+            "gallery_images": [
+                "https:\/\/imgproxy.eneba.games\/fPuQqf5i4U9cgxPb_8fLG_W6fZguMmrRxrrCe80DRks\/rs:fit:300\/ar:1\/czM6Ly9wcm9kdWN0\/cy5lbmViYS5nYW1l\/cy9wcm9kdWN0cy8x\/NkxydVNTTUJseTQ4\/cG9KN2hIQkdzSkli\/bXNzNWljZDBzbGVr\/bHROV2FBLmpwZWc",
+                "https:\/\/imgproxy.eneba.games\/_RGDsTDa7GlaJ_AXa4U9mNgtNDOSfhmBflxu-pOhJRs\/rs:fit:600\/ar:1\/czM6Ly9wcm9kdWN0\/cy5lbmViYS5nYW1l\/cy9wcm9kdWN0cy8x\/NkxydVNTTUJseTQ4\/cG9KN2hIQkdzSkli\/bXNzNWljZDBzbGVr\/bHROV2FBLmpwZWc",
+                "https:\/\/imgproxy.eneba.games\/G_Lv4vmbKnSlc8n6XMtlmZZ4pMVvmlCVLHXDvKhMEik\/rs:fit:144\/ar:1\/czM6Ly9wcm9kdWN0\/cy5lbmViYS5nYW1l\/cy9wcm9kdWN0cy8x\/NkxydVNTTUJseTQ4\/cG9KN2hIQkdzSkli\/bXNzNWljZDBzbGVr\/bHROV2FBLmpwZWc"
+            ]
+        },
+        {
+            "id": 5,
+            "user_id": 3,
+            "title": "Galaxy S26 Dynamic AMOLED 2X 6.2 pulgadas | Liverpool",
+            "description": "Compra Galaxy S26 Dynamic AMOLED 2X 6.2 pulgadas en Liverpool y aprovecha el envío gratis en todas tus compras.",
+            "product_url": "https:\/\/www.liverpool.com.mx\/tienda\/pdp\/galaxy-s26-dynamic-amoled-2x-6-2-pulgadas\/999695247247?skuid=1209984730",
+            "image_url": "https:\/\/sp632.liverpool.com.mx\/i\/1209984721.jpg",
+            "store": "Liverpool",
+            "current_price": "20998.99",
+            "regular_price": "26999.00",
+            "currency": "MXN",
+            "discount_percent": 22,
+            "status": "active",
+            "votes_count": 0,
+            "bookmarks_count": 0,
+            "comments_count": 0,
+            "created_at": "2026-10-14T04:31:15.000000Z",
+            "updated_at": "2026-10-14T04:31:15.000000Z",
+            "product_details": [],
+            "gallery_images": [
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984721.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_1p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_2p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_3p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_4p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_5p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_6p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_7p.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "user_id": 3,
+            "title": "Galaxy S26 Dynamic AMOLED 2X 6.2 pulgadas | Liverpool",
+            "description": "Compra Galaxy S26 Dynamic AMOLED 2X 6.2 pulgadas en Liverpool y aprovecha el envío gratis en todas tus compras.",
+            "product_url": "https:\/\/www.liverpool.com.mx\/tienda\/pdp\/galaxy-s26-dynamic-amoled-2x-6-2-pulgadas\/999695247247?skuid=1209984730",
+            "image_url": "https:\/\/sp632.liverpool.com.mx\/i\/1209984721.jpg",
+            "store": "Liverpool",
+            "current_price": "20998.99",
+            "regular_price": "21799.00",
+            "currency": "MXN",
+            "discount_percent": 4,
+            "status": "active",
+            "votes_count": 0,
+            "bookmarks_count": 0,
+            "comments_count": 0,
+            "created_at": "2026-10-14T05:27:51.000000Z",
+            "updated_at": "2026-10-14T05:27:51.000000Z",
+            "product_details": [],
+            "gallery_images": [
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984721.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_1p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_2p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_3p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_4p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_5p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_6p.jpg",
+                "https:\/\/sp632.liverpool.com.mx\/i\/1209984730_7p.jpg"
+            ]
+        }
+    ],
+    "price_histories": [
+        {
+            "id": 1,
+            "deal_id": 1,
+            "price": "10500.00",
+            "currency": "MXN",
+            "recorded_at": "2026-10-13 04:55:44",
+            "created_at": "2026-10-13 04:55:44",
+            "updated_at": "2026-10-13 04:55:44"
+        },
+        {
+            "id": 2,
+            "deal_id": 2,
+            "price": "30998.50",
+            "currency": "MXN",
+            "recorded_at": "2026-10-14 00:19:49",
+            "created_at": "2026-10-14 00:19:49",
+            "updated_at": "2026-10-14 00:19:49"
+        },
+        {
+            "id": 3,
+            "deal_id": 3,
+            "price": "15998.90",
+            "currency": "MXN",
+            "recorded_at": "2026-10-14 04:12:42",
+            "created_at": "2026-10-14 04:12:42",
+            "updated_at": "2026-10-14 04:12:42"
+        },
+        {
+            "id": 4,
+            "deal_id": 4,
+            "price": "6.40",
+            "currency": "USD",
+            "recorded_at": "2026-10-14 04:17:25",
+            "created_at": "2026-10-14 04:17:25",
+            "updated_at": "2026-10-14 04:17:25"
+        },
+        {
+            "id": 5,
+            "deal_id": 5,
+            "price": "20998.99",
+            "currency": "MXN",
+            "recorded_at": "2026-10-14 04:31:15",
+            "created_at": "2026-10-14 04:31:15",
+            "updated_at": "2026-10-14 04:31:15"
+        },
+        {
+            "id": 6,
+            "deal_id": 6,
+            "price": "20998.99",
+            "currency": "MXN",
+            "recorded_at": "2026-10-14 05:27:51",
+            "created_at": "2026-10-14 05:27:51",
+            "updated_at": "2026-10-14 05:27:51"
+        }
+    ],
+    "deal_comments": [],
+    "deal_bookmarks": [
+        {
+            "id": 1,
+            "deal_id": 2,
+            "user_id": 3,
+            "created_at": "2026-10-14 00:20:30",
+            "updated_at": "2026-10-14 00:20:30"
+        }
+    ],
+    "deal_votes": []
+}

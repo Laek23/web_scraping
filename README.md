@@ -77,3 +77,34 @@ coincidencias de consultas y salidas Markdown/HTML/JSON. `Crawl` recorre como
 máximo cinco páginas del mismo host por ejecución. Se limita la longitud de
 respuestas, no se siguen redirecciones y se bloquean IPs privadas y reservadas.
 PDF requiere un extractor adicional y se informa explícitamente si se intenta.
+
+## Despliegue en Render con PostgreSQL
+
+El backend está preparado para desplegarse en [Render](https://render.com) utilizando PostgreSQL.
+
+### Opción 1: Despliegue automático con Blueprint (Recomendado)
+
+1. En el panel de Render, haz clic en **New +** > **Blueprint**.
+2. Conecta este repositorio de GitHub.
+3. Render detectará automáticamente el archivo [render.yaml](render.yaml) y provisionará:
+   - **Base de datos PostgreSQL** (`webscrap-db`).
+   - **Servicio Web** (`webscrap-backend`) con Docker, PHP 8.2 y extensiones `pdo_pgsql`.
+4. El contenedor ejecutará automáticamente `php artisan migrate --force --seed`, aplicando las migraciones y cargando los datos iniciales ([data_export.json](database/seeders/data_export.json)).
+
+### Opción 2: Despliegue manual
+
+1. **Crear PostgreSQL:**
+   - En Render, crea una **PostgreSQL Database** (ej. nombre `webscrap-db`, base `webscrap`).
+   - Copia la **Internal Database URL** (ej. `postgres://webscrap:pass@dpg-xxx:5432/webscrap`).
+2. **Crear Web Service:**
+   - Crea un **Web Service**, selecciona tu repositorio de GitHub y el entorno **Docker**.
+   - Agrega las variables de entorno en el panel de Render:
+     - `DB_CONNECTION`: `pgsql`
+     - `DATABASE_URL`: Pegar la URL interna de tu base de datos de Render.
+     - `APP_KEY`: Genera una clave con `php artisan key:generate --show` o usa la de tu `.env`.
+     - `APP_ENV`: `production`
+     - `APP_DEBUG`: `false`
+     - `CORS_ALLOWED_ORIGINS`: `*` (o la URL de tu frontend).
+3. **Restaurar datos existentes:**
+   - Se incluye el archivo [database/render_postgres_data.sql](database/render_postgres_data.sql) listo para ejecutarse directamente en la consola de Render o mediante `psql` si deseas restaurar manualmente los registros.
+
